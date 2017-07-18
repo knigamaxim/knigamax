@@ -1,0 +1,292 @@
+@font-face {
+  font-family: Calibri;
+  url("../fonts/Calibri.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+	font-size: 14px;
+}
+
+.openSans {
+  font-family: 'Open Sans';
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titles {
+  color: #ffcc00;
+  font-size: 25px;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+
+/*------------------- Header ---------------------*/
+
+.bg-1{
+  background: #0075BF;
+}
+
+.bg-2{
+  background: #F1F1F1;
+}
+
+.bg-3{
+  background: #F8F8F8;
+}
+
+.logo{
+  padding: 50px 0 15px 0;
+  justify-content: center;
+  color: #0075BF;
+  font-size: 45px;
+}
+
+/*---------*/
+.top_menu{
+ height: 50px;
+ justify-content: center;
+ padding-right: 10px; 
+}
+
+.top_menu>li>a {
+  color: #fff;
+}
+
+.top_menu>li:first-child{
+  flex-basis: auto;
+  align-self: center;
+  content: url("../img/location.png");
+  margin-right: 12px;
+}
+
+.top_menu>li:nth-child(2){
+  flex-basis: 360px;
+  align-self: center;
+  border-right: 1px solid #fff;
+  line-height: 3.6;
+}
+
+.top_menu>li:nth-child(3){
+  content: url("../img/message.png");
+  margin: 0 12px;
+  align-self: center;
+  flex-basis: auto;
+}
+
+.top_menu>li:nth-child(4){
+  flex-basis: 150px;
+  align-self: center;
+  border-right: 1px solid #fff;
+  line-height: 3.6;
+}
+
+.top_menu>li:nth-child(5){
+  content: url("../img/smartphone.png");
+  margin: 0 12px;
+  align-self: center;
+  flex-basis: auto;
+ }
+
+.top_menu>li:nth-child(6){
+  flex-basis: 400px;
+  align-self: center;
+  line-height: 3.6;
+  flex-shrink: 3;
+}
+
+.top_menu>li:nth-child(7),
+.top_menu>li:nth-child(8) {
+  border: 1px solid #fff;
+  padding: 5px;
+  margin-right: 7px;
+  align-self: center;
+}
+
+.top_menu>li:last-child {
+  background: #FFDE00;
+  padding: 6px;
+  align-self: center;
+}
+
+.top_menu>li:last-child>a {
+  color: #000;
+}
+
+/*-------------------*/
+.bottom_menu{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom_menu>li{
+  border-left: 1px solid #aaa;
+  flex-basis: 190px;
+  line-height: 3.25;
+  border-bottom: 4px solid rgba(255,222,0,0);
+  transition: border-color 1.5s;
+}
+
+.bottom_menu>li:nth-child(2),
+.bottom_menu>li:nth-child(3) {
+  flex-basis: 280px;
+}
+
+.bottom_menu>li>a {
+  color: #1b497e;
+}
+
+.bottom_menu>li:last-child {
+  border-right: 1px solid #aaa;
+}
+
+.bottom_menu>li:hover{
+  cursor: pointer;
+  border-bottom: 4px solid rgba(255,222,0,1); 
+}
+
+.header_menu {
+  z-index: 999;
+}
+
+.header_menu label, .header_menu input {
+  display: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #2688C7;
+  font-family: 'Calibri';
+}
+
+/*---------------- slider_first -----------------*/
+
+#slider_first {
+  background: #aaa;
+}
+
+.slider_about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner_foto {
+  width: 100%;
+}
+
+/*---------------- slider_second -----------------*/
+
+#slider_second {
+  background: #eee;
+  padding-bottom: 30px;
+}
+
+.slider_products {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mask {
+  background: url(../img/mask.jpg) center center;
+}
+
+.products_foto {
+   width: 100%;
+}
+
+.mask:hover .products_foto {
+ opacity: 0.3;
+}
+
+
+/*------------------- partners -------------------*/
+
+#partners {
+  padding: 0 0 40px 0; 
+}
+
+.logos_wrap {
+  justify-content: center;
+}
+
+.logo_partners {
+  width: 15%;
+  height: 200px;
+  border: 1px solid #aaa;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo_icon {
+  width: 90%;
+}
+
+.logo_txt {
+  color: #2f5075;
+}
+
+/*--------------------- footer ---------------------*/
+
+footer{
+  background: url(../img/bg_footer.jpg) center center;
+  height: 73px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer img {
+  margin-right: 12px;
+}
+
+.element_1, .element_2, .element_3, .element_4, .element_5 {
+  align-items: center;
+}
+
+.element_1 {
+  flex-basis: 330px;
+}
+
+.element_2 {
+  flex-basis: 270px;
+}
+
+.element_3 {
+  flex-basis: 180px;
+}
+
+.element_4 {
+  flex-basis: 290px;
+}
+
+.element_5 {
+  flex-basis: 160px;
+}
+
+.element_4>p:hover{
+  text-decoration: underline;
+}
+
